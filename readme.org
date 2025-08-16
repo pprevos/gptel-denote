@@ -22,3 +22,8 @@ This package is not distributed through ELPA or MELPA. To install it on your sys
 Thanks to [[https://github.com/oantolin][Omar Antolín Camarena]] for getting me started.
 
 A minor issue with this package is that because GPTel is asynchronous, sometimes the wrong content is stored in a variable. If you have a solution than please submit a pull request.
+
+* Future work
+- [ ] Mitigate synchronicity issue
+- [ ] Remove keywords not in existing Denote files
+- [ ] Provide title and keywords as a user prompt so they can be corrected
