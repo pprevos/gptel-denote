@@ -1,0 +1,20 @@
+#+title: Convert GPTel Chat Buffer to a Denote file
+
+[[https://github.com/karthink/gptel][GPTel]] is a simple Large Language Model chat client for Emacs. The ~gptel~ function starts a chat session where users can interact with the active Large Language Model (LLM).  
+
+The ~gptel-denote~ function converts a GPTel buffer to a [[https://protesilaos.com/emacs/denote][Denote]] file to store it for future reference.
+
+This function generates a title and keywords using the active LLM, using the content of the buffer.
+
+Keywords are appended with the customisable ~gptel-denote-keyword~. This keyword ensures that AI-generated content is marked as such.
+
+When the file is saved, GPTel adds file properties to indicate some of the metadata used to generate this content, such as the used backend, mode, system prompt and bounds.
+
+This package is not distributed through ELPA or MELPA. To install it on your system use (Emacs 29.1 or higher):
+
+#+begin_src elisp
+    (unless (package-installed-p 'gptel-denote)
+    (package-vc-install
+     '(gptel-denote
+       :url "https://github.com/pprevos/gptel-denote/")))
+#+end_src
