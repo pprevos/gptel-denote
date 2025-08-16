@@ -18,3 +18,7 @@ This package is not distributed through ELPA or MELPA. To install it on your sys
      '(gptel-denote
        :url "https://github.com/pprevos/gptel-denote/")))
 #+end_src
+
+Thanks to [[https://github.com/oantolin][Omar Antolín Camarena]] for getting me started.
+
+A minor issue with this package is that because GPTel is asynchronous, sometimes the wrong content is stored in a variable. If you have a solution than please submit a pull request.
